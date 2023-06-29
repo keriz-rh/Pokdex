@@ -14,7 +14,7 @@ let searchPokemon = 1;
 
 // Función asíncrona que realiza una petición HTTP GET a la API de PokeAPI para obtener los datos de un pokémon por su ID
 const fetchPokemon = async (pokemon) => {
-    const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
+    const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}`);
     
     // Si la respuesta de la API es satisfactoria, se devuelve un objeto JSON con los datos del pokémon
     if (APIResponse.status === 200){
